@@ -41,4 +41,6 @@ def recommendedUsersAnimes(request):
     
     return render(request,'recommended_users_animes.html')
 
+def searchAnimesByUser(request):
+    return render(request, 'search_anime.html')
 

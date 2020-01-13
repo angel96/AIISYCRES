@@ -15,6 +15,8 @@ urlpatterns = [
     path('mostValuedAnimes', views.mostValuedAnimes),
     path('similarAnimes', views.similarAnimes),
     path('recommendedUsersAnimes', views.recommendedUsersAnimes),
+    path('searchAnime', views.search),
+    path('searchAnimesByUser', views.searchAnimesByUser),
     path('searchGenero', views.search),
     path('admin/', admin.site.urls),
     ]
