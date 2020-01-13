@@ -9,12 +9,12 @@ from django.views import static
 from principal import views
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    #re_path(r'media/(?P<path>.*)', static.serve,
-    #        {'document_root': settings.MEDIA_ROOT,}),
-    #path('sobre/',views.sobre),
-    #path('usuarios/', views.usuarios),
-    #path('recetas/', views.lista_recetas),
-    #re_path(r'receta/(?P<id_receta>\d+)',views.detalle_receta),
-    #path('',views.inicio),
+    path('', views.index),
+    path('populate/', views.populateDB),
+    path('loadRS', views.loadRS),
+    path('mostValuedAnimes', views.mostValuedAnimes),
+    path('similarAnimes', views.similarAnimes),
+    path('recommendedUsersAnimes', views.recommendedUsersAnimes),
+    path('searchGenero', views.search),
+    path('admin/', admin.site.urls),
     ]

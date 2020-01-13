@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Sistema de Recomendacion - Animes</title>
+</head>
+<body>
+{% include 'header.html' %}
+<h1>Animes {{anime.id}}</h1>
+{% for item, score in items %}
+<ul>
+<li>Anime: {{item.id}}  Titulo: {{item.titulo}} Formato: {{item.formato}}  Episodios: {{item.episodios}} </li>
+</ul>
+{% empty %}
+<h2> Insufficient user data </h2>
+{% endfor %}
+</body>
+</html>
